@@ -3,6 +3,9 @@
   <a href="./README_ZH.md"><img src="https://img.shields.io/badge/Lang-简体中文-red.svg" alt="Chinese"></a>
   <a href="./README.md"><img src="https://img.shields.io/badge/Lang-English-blue.svg" alt="English"></a>
 </div>
+<a href="mailto:justinlee@aivault.dev">
+  <img src="https://img.shields.io/badge/Email-justinlee@aivault.dev-blue?logo=gmail&logoColor=white" alt="Email">
+</a>
 **Local Mind** is a local-first RAG (Retrieval-Augmented Generation) tool dedicated to stability, speed, and reproducibility. It stores user data entirely on the local device, reading and filtering file information through explicit engineering processes. The system prioritizes deterministic algorithms to answer questions, invoking local AI only when necessary, aiming to provide users with authentic and trustworthy productivity enhancements.
 **Tip："Recommended to run overnight for large datasets" **
 
