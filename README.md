@@ -1,3 +1,14 @@
+<div align="center">
+
+# Local Mind
+
+<!-- 语言切换徽章或链接 -->
+<p align="center">
+  <a href="./README_zh.md">简体中文</a> |
+  <span>English</span>
+</p>
+
+</div>
 **Local Mind** is a local-first RAG (Retrieval-Augmented Generation) tool dedicated to stability, speed, and reproducibility. It stores user data entirely on the local device, reading and filtering file information through explicit engineering processes. The system prioritizes deterministic algorithms to answer questions, invoking local AI only when necessary, aiming to provide users with authentic and trustworthy productivity enhancements.
 **Tip："Recommended to run overnight for large datasets" **
 
