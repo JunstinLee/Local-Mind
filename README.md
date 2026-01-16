@@ -36,15 +36,19 @@ The system handles the vast majority of queries through engineering means, **inv
     Given limited local hardware and AI conditions, fully automatic RAG workflows lead to completely uncontrollable response times and result quality—it is like "a car with a blown tire speeding on the highway," where you never know what will happen next. Local Mind has invested heavily in building an engineering system solely to provide the most stable and factual answers under specific conditions.
 ## Quick Start
   There are 3 modes in total, with each tab representing a mode:
+  
 **Document Preparation Mode**
 <img width="1915" height="1007" alt="Docs" src="https://github.com/user-attachments/assets/09f899eb-e0f1-4aeb-8727-87b85129e33f" />
 
 
 Search Mode
-![[Search.png]]
+<img width="1919" height="1004" alt="Search" src="https://github.com/user-attachments/assets/becc80bd-b392-41e7-a3c2-6270a5dfa9a3" />
+
 Q&A Mode
 
-![[Q&A.png]]
+<img width="1919" height="1003" alt="Q A" src="https://github.com/user-attachments/assets/526a79f1-64f0-4417-8dda-1d1d7b672d53" />
+
+
 
 Upon entering the application, you first need to go to the Settings interface to download the embedding model.
 ![[First.png]]
