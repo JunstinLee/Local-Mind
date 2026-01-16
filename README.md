@@ -51,13 +51,18 @@ Q&A Mode
 
 
 Upon entering the application, you first need to go to the Settings interface to download the embedding model.
-![[First.png]]
+
+<img width="1911" height="1008" alt="First" src="https://github.com/user-attachments/assets/8294b6c0-cf95-4800-9abf-df8b8aefd993" />
 
 Once the download is complete, click the "Upload File" button to copy files to the preparation area.
-![[Second.png]]
+
+<img width="1919" height="1002" alt="Second" src="https://github.com/user-attachments/assets/686c9088-9b7f-49ae-9f11-f9b6b75e3876" />
+
 
 After file copying is complete, click the "Build Knowledge Base" button to vectorize the files and import them into the knowledge base.
-![[thrid.png]]
+
+<img width="1919" height="1013" alt="thrid" src="https://github.com/user-attachments/assets/88faf4d3-f6cf-4b41-8a9d-53c5972fbeb0" />
+
 
 Once construction is complete, you can confidently use Search Mode and Q&A Mode.
 ## Use Cases
