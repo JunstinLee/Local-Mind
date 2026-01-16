@@ -1,0 +1,248 @@
+{
+  "search": {
+    "ready": "语义搜索已准备就绪",
+    "prompt": "输入关键词，开始探索您的知识库。",
+    "aiPrompt": "输入您的问题，AI 将为您搜索最相关的内容...",
+    "tryAgain": "请尝试使用不同的关键词再次搜索。",
+    "noRelatedContent": "未能找到相关内容",
+    "searching": "正在努力搜索中...",
+    "foundResults": "共找到 {count} 个相关结果",
+    "semanticHint": "结果基于语义相似度排序，可能与关键词不完全匹配",
+    "source": "来源"
+  },
+  "filter": {
+    "title": "筛选条件",
+    "settings": "筛选条件设置",
+    "keywords": "关键词",
+    "keywordsPlaceholder": "请输入关键词搜索",
+    "fileType": "文件类型",
+    "timeRange": "时间范围",
+    "lastUpdate": "修改时间",
+    "fileSize": "文件大小",
+    "reset": "重置",
+    "apply": "应用筛选",
+    "noResults": "未找到符合筛选条件的结果",
+    "adjustPrompt": "请尝试调整或重置您的筛选条件。",
+    "clearAndRetry": "清除筛选条件并重新搜索",
+    "adjustOrImport": "尝试调整筛选条件或导入新文件"
+  },
+  "upload": {
+    "title": "上传内容",
+    "dragDrop": "拖拽文件或文件夹到此处",
+    "clickSelect": "或点击下方的按钮选择",
+    "filesSelected": "已选择 {count} 个文件",
+    "cancel": "取消",
+    "uploading": "上传中...",
+    "start": "开始上传",
+    "selectFiles": "选择文件",
+    "selectFolder": "选择文件夹"
+  },
+  "knowledgeBase": {
+    "buildTitle": "知识库构建",
+    "overallProgress": "总体进度",
+    "loadingFileList": "正在加载文件列表",
+    "noFilesAvailable": "没有可用于构建知识库的文件",
+    "startBuild": "开始构建 ({count}个文件)",
+    "buildCompleted": "已经成功构建",
+    "estimatedTime": "预计剩余时间"
+  },
+  "document": {
+    "listTitle": "文档列表",
+    "fileListTitle": "文件列表",
+    "noDocuments": "未找到任何文档",
+    "loadingText": "文件列表加载中...",
+    "detail": "查看详情",
+    "delete": "删除",
+    "deleteConfirm": "确定要删除文档 \"{name}\" 吗？",
+    "detailTitle": "文件详情",
+    "cancel": "取消",
+    "confirm": "确定",
+    "adjustOrImport": "尝试调整筛选条件或导入新文件",
+    "files": "个文件",
+    "listTitleDefault": "文档列表"
+  },
+  "settings": {
+    "title": "设置",
+    "general": "通用设置",
+    "language": "语言设置",
+    "selectLanguage": "选择语言",
+    "pleaseSelectLanguage": "请选择语言",
+    "releaseDate": "发布日期",
+    "numParameters": "参数量",
+    "contextLength": "上下文长度",
+    "supportedLanguages": "支持语言",
+    "currentModel": "当前模型",
+    "apply": "应用",
+    "downloading": "下载中",
+    "download": "下载",
+    "hfCachePath": "Hugging Face 缓存路径",
+    "embeddingModel": "嵌入模型 (对文件进行向量化)",
+    "size": "大小",
+    "modelSourceFrom": "模型来源于 Hugging Face",
+    "loading": "加载中...",
+    "confirm": "确定",
+    "cancel": "取消",
+    "clearData": "清除数据",
+    "clearKnowledgeBaseCache": "清除知识库缓存",
+    "clearCacheTitle": "确认清除缓存",
+    "clearCacheConfirm": "此操作将清除所有知识库缓存数据，包括向量数据库和元数据。此操作不可恢复，确定要继续吗？",
+    "clearCacheSuccess": "知识库缓存已成功清除",
+    "clearCacheError": "清除缓存失败"
+  },
+  "time": {
+    "justNow": "刚刚",
+    "allTime": "全部时间",
+    "today": "今天",
+    "thisWeek": "本周",
+    "thisMonth": "本月",
+    "thisYear": "今年",
+    "anyTime": "任何时间",
+    "within24h": "24小时内",
+    "withinWeek": "一周内",
+    "withinMonth": "一月内"
+  },
+  "common": {
+    "anySize": "任何大小",
+    "loading": "加载中...",
+    "noMore": "没有更多了",
+    "loadingDetail": {
+      "title": "正在加载基础服务...",
+      "model_loaded": "模型加载",
+      "chroma_db_initialized": "ChromaDB初始化",
+      "search_service_initialized": "搜索服务初始化",
+      "completed": "已完成",
+      "loading": "加载中...",
+      "initializing": "初始化中..."
+    }
+  },
+  "status": {
+    "completed": "完成",
+    "inProgress": "进行中",
+    "failed": "失败",
+    "emptyFile": "空文件",
+    "pending": "等待中"
+  },
+  "header": {
+    "title": "Local Mind",
+    "docs": "文档检查",
+    "search": "语义搜索",
+    "qa": "问答模式",
+    "uploadFiles": "上传文件",
+    "buildBase": "构建知识库",
+    "toggleTheme": "切换主题",
+    "settings": "设置"
+  },
+  "notification": {
+    "uploadSuccess": "文件上传成功！",
+    "uploadFailed": "上传失败: {error}"
+  },
+  "qa": {
+    "newChat": "新建聊天",
+    "user": "用户",
+    "sendMessagePlaceholder": "发送消息...",
+    "selectModel": "选择模型",
+    "copy": "复制",
+    "saveAs": "另存为",
+    "thinking": "思考过程",
+    "expand": "展开",
+    "collapse": "收起",
+    "step": "思考 {index}"
+  },
+  "provenance": {
+    "title": "来源信息",
+    "similarity": "相似度",
+    "ai": "AI",
+    "you": "您",
+    "copied": "已复制到剪贴板",
+    "copyFailed": "复制失败"
+  },
+  "rag_table": {
+    "file_name": "文件名称",
+    "contract_date": "签订日期",
+    "contract_amount": "合同金额",
+    "index": "序号",
+    "keywords": "关键词",
+    "match_keywords": "匹配关键词",
+    "core_summary": "核心摘要 (点击预览)",
+    "summary": "摘要",
+    "no_summary": "暂无摘要",
+    "none": "无",
+
+    "ctx_summary_match_prefix": "系统根据您的查询，在以下文件的摘要中找到了精确匹配：",
+    "ctx_title_match_prefix": "系统根据您的查询关键词，精确定位到了以下文件：",
+    "ctx_inference_note": "请注意：以上是系统直接找到的相关文件。根据这些文件名，可以推断出您查询的内容就在这些文件中。",
+    "thinking_process": "思考过程",
+
+    "header_statistics": "综合统计与分析结果",
+    "desc_statistics": "根据您的指令，系统检索了相关文档并进行了精密计算，汇总如下：",
+    "header_multi_target": "多目标对比分析",
+    "desc_multi_target": "系统已为您找到多个匹配目标，正在进行并列对比：",
+    "header_context_contrast": "上下文对比分析",
+    "desc_context_contrast": "基于当前锁定的上下文与新提到的目标，分析如下：",
+    "header_multi_summary": "多文档综合摘要",
+    "desc_multi_summary": "已为您汇总多个相关文档的核心内容：",
+    "header_general": "综合处理结果",
+
+    "found_files_prefix": "已为您找到",
+    "found_files_suffix": "个相关文件：",
+
+    "summary_match_prefix": "系统在以下文件的摘要中找到了匹配：",
+    "other_summary_match": "其他摘要匹配文件",
+    "summary_precise_match": "系统根据您的查询，在以下文件的摘要中找到了精确匹配：",
+    "summary_supplement": "相关摘要补充",
+
+    "header_amount_details": "金额统计明细",
+    "total_amount": "总计金额",
+    "data_source": "数据来源",
+
+    "missing_info_prefix": "注：检索到的文档中未发现有效",
+    "missing_info_suffix": "信息。",
+    "no_complete_record": "(未找到包含完整日期和金额信息的记录)",
+    "warning_missing_data": "以下文件没有提取到关键数据，仅列出文件名",
+    "header_data_extracted": "已提取关键数据文件",
+    "header_data_missing": "未提取关键数据文件",
+    "file_name_no_data": "文件名 (无关键数据)",
+    "desc_data_missing": "以下文件虽然被检索到，但未能从中提取出有效的日期或金额信息：",
+    "content_empty_summary": "(暂无摘要内容)",
+    "disclaimer_auto_extract": "以上内容由系统防护层自动提取，仅供参考。",
+    "tip_calculation_source": "提示：以上计算基于上述检索到的结构化数据自动生成。",
+    "no_result_found": "根据您的查询条件，系统在数据库中未找到符合要求的相关信息。\n\n建议您检查关键词或尝试更简单的描述。"
+  },
+  "refresh": {
+    "title": "模型下载完成",
+    "downloadComplete": "下载完成！",
+    "modelDownloaded": "模型 {modelName} 已成功下载",
+    "refreshRequired": "点击按钮刷新页面以使新模型生效",
+    "refreshNow": "刷新页面"
+  },
+  "buildBase": {
+    "status": {
+      "waiting": "等待处理...",
+      "processing": "正在处理...",
+      "completed": "成功构建！",
+      "failed": "处理失败",
+      "backendError": "后端未返回处理结果",
+      "requestFailed": "启动请求失败: {error}"
+    },
+    "timeUnits": {
+      "seconds": "s",
+      "minutes": "m",
+      "hours": "h"
+    }
+  },
+  "update": {
+    "title": "更新可用",
+    "newVersion": "新版本 {version} 已发布",
+    "currentVersion": "当前版本: {version}",
+    "available": "可用更新",
+    "publishedAt": "发布于",
+    "releaseNotes": "更新说明",
+    "download": "下载更新",
+    "changelog": "更新日志",
+    "close": "关闭",
+    "checking": "正在检查更新...",
+    "latest": "您正在使用最新版本",
+    "error": "检查更新失败",
+    "checkAgain": "重新检查"
+  }
+}

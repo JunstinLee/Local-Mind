@@ -1,0 +1,656 @@
+/* styles/base.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 全局样式 */
+html {
+  @apply tw-transition-colors tw-duration-300;
+}
+
+body {
+  @apply tw-text-gray-900 tw-transition-colors tw-duration-300;
+  background-color: #eee8d5;
+}
+
+html.dark body {
+  @apply tw-text-white;
+  background-color: #1e1e20;
+}
+
+/* Element Plus 组件过渡动画 */
+.el-button,
+.el-input,
+.el-select,
+.el-dialog,
+.el-card,
+.el-table,
+.el-form-item,
+.el-menu,
+.el-dropdown {
+  transition:
+    background-color 0.1s ease,
+    border-color 0.1s ease,
+    color 0.1s ease;
+}
+
+/* Element Plus 亮色模式 CSS 变量 */
+:root {
+  /* 主色调 */
+  --el-color-primary: #409eff;
+
+  /* 成功色 */
+  --el-color-success: #67c23a;
+
+  /* 警告色 */
+  --el-color-warning: #e6a23c;
+
+  /* 危险色 */
+  --el-color-danger: #f56c6c;
+
+  /* 信息色 */
+  --el-color-info: #909399;
+
+  /* 背景色 */
+  --el-bg-color: #eee8d5 !important;
+  --el-bg-color-page: #f2f3f5;
+  --el-bg-color-overlay: #ffffff;
+
+  /* 文字色 */
+  --el-text-color-primary: #303133;
+  --el-text-color-regular: #606266;
+  --el-text-color-secondary: #909399;
+  --el-text-color-placeholder: #a8abb2;
+  --el-text-color-disabled: #c0c4cc;
+
+  /* 边框色 */
+  --el-border-color: #ffffff;
+  --el-border-color-light: #ffffff !important;
+  --el-border-color-lighter: #ffffff;
+  --el-border-color-extra-light: #ffffff;
+  --el-border-color-dark: #d4d7de;
+
+  /* 填充色 */
+  --el-fill-color: #f0f2f5;
+  --el-fill-color-light: #f5f7fa;
+  --el-fill-color-lighter: #fafafa;
+  --el-fill-color-extra-light: #fafcff;
+  --el-fill-color-dark: #ebedf0;
+  --el-fill-color-darker: #e6e8eb;
+  --el-fill-color-blank: #ffffff;
+
+  /* 滚动条颜色 */
+  --el-scrollbar-color: #c1c1c1;
+  --el-scrollbar-bg-color: #f0f2f5;
+
+  /* 阴影 */
+
+  /* 禁用状态 */
+  --el-disabled-bg-color: var(--el-fill-color-light);
+  --el-disabled-text-color: var(--el-text-color-placeholder);
+  --el-disabled-border-color: var(--el-border-color-light);
+}
+
+/* Element Plus 暗色模式 CSS 变量 */
+html.dark {
+  /* 主色调 */
+  --el-color-primary: #409eff;
+
+  --el-color-primary-dark-2: #66b1ff;
+
+  /* 成功色 */
+  --el-color-success: #67c23a;
+  --el-color-success-dark-2: #85ce61;
+
+  /* 警告色 */
+  --el-color-warning: #e6a23c;
+
+  --el-color-warning-dark-2: #ebb563;
+
+  /* 危险色 */
+  --el-color-danger: #f56c6c;
+
+  --el-color-danger-dark-2: #f78989;
+
+  /* 信息色 */
+  --el-color-info: #909399;
+
+  --el-color-info-dark-2: #a6a9ad;
+
+  /* 背景色 - 与Tailwind gray-900保持一致 */
+  --el-bg-color: rgb(17 24 39) !important;
+  --el-bg-color-page: rgb(17 24 39);
+  --el-bg-color-overlay: rgb(17 24 39);
+
+  /* 文字色 */
+  --el-text-color-primary: #e5eaf3;
+  --el-text-color-regular: #cfd3dc;
+  --el-text-color-secondary: #a3a6ad;
+  --el-text-color-placeholder: #8d9095;
+  --el-text-color-disabled: #6c6e72;
+
+  /* 边框色 */
+  --el-border-color: #4c4d4f;
+  --el-border-color-light: #414243 !important;
+
+  /* 填充色 - 与Tailwind gray-900保持一致 */
+  --el-fill-color: #2d2d2f;
+
+  --el-fill-color-dark: #35353a;
+  --el-fill-color-darker: #3b3b40;
+  --el-fill-color-blank: transparent;
+
+  /* 滚动条颜色 */
+  --el-scrollbar-color: #4b5563;
+  --el-scrollbar-bg-color: #1f1f20;
+
+  /* 阴影 */
+  --el-box-shadow: 0px 12px 32px 4px rgba(0, 0, 0, 0.36), 0px 8px 20px rgba(0, 0, 0, 0.72);
+  --el-box-shadow-light: 0px 0px 12px rgba(0, 0, 0, 0.72);
+  --el-box-shadow-lighter: 0px 0px 6px rgba(0, 0, 0, 0.72);
+  --el-box-shadow-dark:
+    0px 16px 48px 16px rgba(0, 0, 0, 0.72), 0px 12px 32px rgba(0, 0, 0, 0.84),
+    0px 8px 16px -8px rgba(0, 0, 0, 0.96);
+
+  /* 禁用状态 */
+  --el-disabled-bg-color: var(--el-fill-color-light);
+  --el-disabled-text-color: var(--el-text-color-placeholder);
+  --el-disabled-border-color: var(--el-border-color-light);
+}
+/* 强制应用Element Plus组件的暗色模式样式 */
+html.dark .el-button {
+  --el-button-bg-color: var(--el-fill-color-blank);
+  --el-button-border-color: var(--el-border-color);
+  --el-button-text-color: var(--el-text-color-regular);
+  --el-button-hover-bg-color: var(--el-fill-color);
+  --el-button-hover-border-color: var(--el-border-color-light);
+  --el-button-hover-text-color: var(--el-text-color-primary);
+}
+
+html.dark .el-button--primary {
+  --el-button-bg-color: var(--el-color-primary);
+  --el-button-border-color: var(--el-color-primary);
+  --el-button-text-color: #ffffff;
+  --el-button-hover-bg-color: var(--el-color-primary-light-3);
+  --el-button-hover-border-color: var(--el-color-primary-light-3);
+}
+
+html.dark .el-button--text {
+  --el-button-bg-color: transparent;
+  --el-button-border-color: transparent;
+  --el-button-text-color: var(--el-text-color-regular);
+  --el-button-hover-bg-color: rgb(55 65 81); /* 同步DOC按钮的hover背景色 gray-700 */
+  --el-button-hover-text-color: var(--el-text-color-primary);
+}
+
+/* 强制应用Header按钮的暗色模式样式，与Header背景保持一致 */
+html.dark .el-button.is-text {
+  background-color: #1e1e20 !important; /* 默认状态：与body背景一致 gray-900 */
+  color: var(--el-text-color-regular) !important;
+}
+
+html.dark .el-button.is-text:hover {
+  background-color: rgb(55 65 81) !important; /* 悬停状态：gray-700 */
+  color: var(--el-text-color-primary) !important;
+}
+
+/* 确保Header容器也使用相同的背景色 */
+html.dark header {
+  background-color: #1e1e20; /* 确保Header背景与按钮一致 */
+}
+
+html.dark .el-input {
+  --el-input-bg-color: var(--el-fill-color-blank);
+  --el-input-border-color: var(--el-border-color);
+  --el-input-text-color: var(--el-text-color-primary);
+  --el-input-placeholder-color: var(--el-text-color-placeholder);
+}
+
+html.dark .el-input__wrapper {
+  background-color: var(--el-fill-color-blank) !important;
+  border-color: var(--el-border-color) !important;
+}
+
+html.dark .el-input__inner {
+  color: var(--el-text-color-primary) !important;
+  background-color: transparent !important;
+}
+
+html.dark .el-input__inner::placeholder {
+  color: var(--el-text-color-placeholder) !important;
+}
+
+html.dark .el-dialog {
+  --el-dialog-bg-color: #1e1e20; /* Changed to match body background */
+  --el-dialog-border-color: var(--el-border-color);
+  background-color: #1e1e20 !important; /* Changed to match body background */
+  border: 1px solid var(--el-border-color) !important;
+}
+
+html.dark .el-dialog__header {
+  border-bottom-color: var(--el-border-color) !important;
+}
+
+html.dark .el-dialog__title {
+  color: var(--el-text-color-primary) !important;
+}
+
+html.dark .el-dialog__body {
+  color: var(--el-text-color-regular) !important;
+  background-color: #1e1e20 !important; /* Added to match body background */
+}
+
+html.dark .el-overlay {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+html.dark .el-tag {
+  --el-tag-bg-color: var(--el-fill-color);
+  --el-tag-border-color: var(--el-border-color);
+  --el-tag-text-color: var(--el-text-color-regular);
+}
+
+html.dark .el-tag--primary {
+  --el-tag-bg-color: var(--el-color-primary-light-9);
+  --el-tag-border-color: var(--el-color-primary-light-7);
+  --el-tag-text-color: var(--el-color-primary);
+}
+
+html.dark .el-tag--success {
+  --el-tag-bg-color: var(--el-color-success-light-9);
+  --el-tag-border-color: var(--el-color-success-light-7);
+  --el-tag-text-color: var(--el-color-success);
+}
+
+html.dark .el-tag--info {
+  --el-tag-bg-color: var(--el-color-info-light-9);
+  --el-tag-border-color: var(--el-color-info-light-7);
+  --el-tag-text-color: var(--el-color-info);
+}
+
+html.dark .el-progress-bar__outer {
+  background-color: var(--el-fill-color) !important;
+}
+
+html.dark .el-progress-bar__inner {
+  background-color: var(--el-color-primary) !important;
+}
+
+/* 修复可能的样式覆盖问题 */
+
+/* 确保输入框在focus状态下也有正确的样式 */
+html.dark .el-input.is-focus .el-input__wrapper {
+  border-color: var(--el-color-primary) !important;
+  box-shadow: 0 0 0 1px var(--el-color-primary-light-7) inset !important;
+}
+
+/* 修复对话框关闭按钮 */
+html.dark .el-dialog__headerbtn {
+  color: var(--el-text-color-regular) !important;
+}
+
+html.dark .el-dialog__headerbtn:hover {
+  color: var(--el-text-color-primary) !important;
+}
+/* 修复 el-select 下拉选择框的暗色模式样式 */
+html.dark .el-select {
+  --el-select-input-color: var(--el-text-color-primary);
+  --el-select-multiple-input-color: var(--el-text-color-primary);
+  --el-select-input-focus-border-color: var(--el-color-primary);
+  --el-select-input-font-size: var(--el-font-size-base);
+}
+
+html.dark .el-select__wrapper {
+  background-color: var(--el-fill-color-blank) !important;
+  border-color: var(--el-border-color) !important;
+  box-shadow: 0 0 0 1px var(--el-border-color) inset !important;
+}
+
+html.dark .el-select__wrapper:hover {
+  border-color: var(--el-border-color-light) !important;
+}
+
+html.dark .el-select__wrapper.is-focused {
+  border-color: var(--el-color-primary) !important;
+  box-shadow: 0 0 0 1px var(--el-color-primary) inset !important;
+}
+
+html.dark .el-select__selection {
+  color: var(--el-text-color-primary) !important;
+}
+
+html.dark .el-select__placeholder {
+  color: var(--el-text-color-placeholder) !important;
+}
+
+html.dark .el-select__input {
+  color: var(--el-text-color-primary) !important;
+  background-color: transparent !important;
+}
+
+html.dark .el-select__caret {
+  color: var(--el-text-color-secondary) !important;
+}
+
+html.dark .el-select__caret:hover {
+  color: var(--el-text-color-primary) !important;
+}
+
+/* 修复下拉菜单的暗色模式样式 */
+html.dark .el-select-dropdown {
+  background-color: var(--el-bg-color-overlay) !important;
+  border-color: var(--el-border-color) !important;
+  box-shadow: var(--el-box-shadow-light) !important;
+}
+
+html.dark .el-select-dropdown__item {
+  color: var(--el-text-color-regular) !important;
+  background-color: transparent !important;
+}
+
+html.dark .el-select-dropdown__item:hover {
+  background-color: var(--el-fill-color) !important;
+  color: var(--el-text-color-primary) !important;
+}
+
+html.dark .el-select-dropdown__item.is-selected {
+  background-color: var(--el-color-primary-light-9) !important;
+  color: var(--el-color-primary) !important;
+}
+
+html.dark .el-select-dropdown__item.is-disabled {
+  color: var(--el-text-color-disabled) !important;
+  background-color: transparent !important;
+}
+
+/* 修复 el-popper 弹出层的暗色模式样式 */
+html.dark .el-popper {
+  background-color: var(--el-bg-color-overlay) !important;
+  border-color: var(--el-border-color) !important;
+  color: var(--el-text-color-regular) !important;
+}
+
+html.dark .el-popper.is-dark {
+  background-color: var(--el-bg-color-overlay) !important;
+  color: var(--el-text-color-primary) !important;
+}
+
+html.dark .el-popper__arrow::before {
+  background-color: var(--el-bg-color-overlay) !important;
+  border-color: var(--el-border-color) !important;
+}
+
+/* 修复 el-tooltip 工具提示的暗色模式样式 */
+html.dark .el-tooltip__popper {
+  background-color: var(--el-bg-color-overlay) !important;
+  color: var(--el-text-color-primary) !important;
+  border-color: var(--el-border-color) !important;
+}
+
+html.dark .el-tooltip__popper.is-dark {
+  background-color: var(--el-bg-color-overlay) !important;
+  color: var(--el-text-color-primary) !important;
+}
+
+html.dark .el-tooltip__popper[data-popper-placement^='top'] .el-popper__arrow::before {
+  border-top-color: var(--el-bg-color-overlay) !important;
+}
+
+html.dark .el-tooltip__popper[data-popper-placement^='bottom'] .el-popper__arrow::before {
+  border-bottom-color: var(--el-bg-color-overlay) !important;
+}
+
+html.dark .el-tooltip__popper[data-popper-placement^='left'] .el-popper__arrow::before {
+  border-left-color: var(--el-bg-color-overlay) !important;
+}
+
+html.dark .el-tooltip__popper[data-popper-placement^='right'] .el-popper__arrow::before {
+  border-right-color: var(--el-bg-color-overlay) !important;
+}
+
+/* 修复 el-table 表格的暗色模式样式 */
+html.dark .el-table {
+  background-color: var(--el-bg-color) !important;
+  color: var(--el-text-color-regular) !important;
+}
+
+html.dark .el-table th {
+  background-color: var(--el-fill-color-blank) !important;
+  color: var(--el-text-color-primary) !important;
+  border-bottom-color: var(--el-border-color) !important;
+}
+
+html.dark .el-table td {
+  border-bottom-color: var(--el-border-color-lighter) !important;
+  color: var(--el-text-color-regular) !important;
+}
+
+html.dark .el-table tr:hover td {
+  background-color: var(--el-fill-color) !important;
+}
+
+html.dark .el-table--striped .el-table__body tr.el-table__row--striped td {
+  background-color: var(--el-fill-color-light) !important;
+}
+/* 修复搜索筛选按钮的暗色模式样式 */
+html.dark .tw-border-gray-300:not(.tw-bg-blue-600) {
+  border-color: rgb(75 85 99) !important; /* gray-600 */
+  color: rgb(156 163 175) !important; /* gray-400 */
+  background-color: transparent !important;
+}
+
+html.dark .tw-border-gray-300:not(.tw-bg-blue-600):hover {
+  background-color: rgb(55 65 81) !important; /* gray-700 */
+  color: rgb(229 231 235) !important; /* gray-200 */
+}
+
+/* 修复Tab导航的暗色模式样式 */
+html.dark .tw-text-gray-500:not(.tw-text-blue-600) {
+  color: rgb(156 163 175) !important; /* gray-400 */
+}
+
+html.dark .tw-text-gray-500:not(.tw-text-blue-600):hover {
+  color: rgb(229 231 235) !important; /* gray-200 */
+}
+
+/* 确保暗色模式下的边框颜色正确 */
+html.dark .tw-border-gray-200 {
+  border-color: rgb(75 85 99) !important; /* gray-600 */
+}
+
+html.dark .tw-border-gray-700 {
+  border-color: rgb(75 85 99) !important; /* gray-600 */
+}
+
+/* 修复背景色 */
+html.dark .tw-bg-white {
+  background-color: #1e1e20 !important; /* gray-800 */
+}
+
+html.dark .tw-bg-gray-800 {
+  background-color: #1e1e20 !important; /* gray-800 */
+}
+
+/* 修复悬停背景色 */
+html.dark .hover\:tw-bg-gray-100:hover {
+  background-color: rgb(55 65 81) !important; /* gray-700 */
+}
+
+html.dark .dark\:hover\:tw-bg-gray-700:hover {
+  background-color: rgb(55 65 81) !important; /* gray-700 */
+}
+
+/* 修复文件树暗色模式文字颜色 */
+html.dark .dark\:tw-text-gray-100 {
+  color: rgb(243 244 246) !important; /* gray-100 */
+}
+
+html.dark .tw-text-gray-700.dark\:tw-text-gray-100 {
+  color: rgb(243 244 246) !important; /* gray-100 */
+}
+
+html.dark .tw-text-gray-600.dark\:tw-text-gray-100 {
+  color: rgb(243 244 246) !important; /* gray-100 */
+}
+
+/* 确保文件树组件中的文字颜色正确应用 */
+html.dark .tw-space-y-2 .tw-text-gray-700,
+html.dark .tw-space-y-2 .tw-text-gray-600 {
+  color: rgb(243 244 246) !important; /* gray-100 */
+}
+
+/* 为头部按钮添加特殊样式*/
+html.dark .header-button {
+  --el-button-bg-color: #1e1e20 !important;
+  --el-button-text-color: #f3f4f6 !important; /* gray-100 */
+  --el-button-border-color: #4b5563 !important; /* gray-600 */
+}
+
+html.dark .header-button:hover {
+  --el-button-bg-color: rgb(17 24 39) !important; /* gray-600 */
+  --el-button-text-color: #ffffff !important;
+  --el-button-border-color: #6b7280 !important; /* gray-500 */
+}
+
+/* 修复传统模式筛选弹窗中重置按钮的暗色模式样式 */
+html.dark
+  .el-dialog
+  .el-button:not(.el-button--primary):not(.el-button--text):not(.el-button--info):not(
+    .el-button--success
+  ):not(.el-button--warning):not(.el-button--danger) {
+  --el-button-bg-color: #4b5563 !important; /* gray-600 */
+  --el-button-text-color: #f3f4f6 !important; /* gray-100 */
+  --el-button-border-color: #4b5563 !important; /* gray-600 */
+}
+
+html.dark
+  .el-dialog
+  .el-button:not(.el-button--primary):not(.el-button--text):not(.el-button--info):not(
+    .el-button--success
+  ):not(.el-button--warning):not(.el-button--danger):hover {
+  --el-button-bg-color: #374151 !important; /* gray-700 */
+  --el-button-text-color: #ffffff !important;
+  --el-button-border-color: #374151 !important; /* gray-700 */
+}
+
+/* 修复多选下拉框收缩标签在暗色模式下的样式 */
+html.dark .el-select .el-select__tags {
+  background-color: #374151 !important; /* gray-700 */
+  border-color: #4b5563 !important; /* gray-600 */
+}
+
+html.dark .el-select .el-select__tags .el-select__selection .el-select__selected-item {
+  color: #e5e7eb !important; /* gray-200 */
+}
+
+html.dark .el-select .el-select__tags .el-select__placeholder {
+  color: #9ca3af !important; /* gray-400 */
+}
+
+html.dark .el-select .el-select__tags .el-tag--info {
+  color: #e5e7eb !important; /* gray-200 */
+}
+
+html.dark .el-select .el-select__tags .el-tag--info .el-tag__close {
+  color: #e5e7eb !important; /* gray-200 */
+}
+
+/* 修复搜索模式下重置按钮（清除筛选）的暗色模式样式 */
+html.dark .search-control-panel .el-button--danger.is-plain {
+  --el-button-bg-color: transparent !important;
+  --el-button-text-color: #f87171 !important; /* red-400 */
+  --el-button-border-color: #7f1d1d !important; /* red-800 */
+}
+
+/* 全局自定义滚动条样式 */
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #d1d5db #f3f4f6;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f3f4f6;
+  border-radius: 4px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #9ca3af;
+}
+
+/* 暗色模式下的滚动条样式 */
+.dark .custom-scrollbar {
+  scrollbar-color: #4b5563 #374151;
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-track {
+  background: #374151;
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #4b5563;
+}
+
+.dark .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color: #6b7280;
+}
+/* 搜索模式组件样式管理 */
+.search-mode .search-control-panel .tw-bg-white,
+.search-mode .search-control-panel .tw-bg-gray-900,
+.search-mode .search-control-panel .tw-bg-gray-700,
+.search-mode .search-filters .tw-bg-white,
+.search-mode .search-filters .tw-bg-gray-900 {
+  background-color: rgb(253, 253, 253) !important; /* gray-800 */
+}
+
+/* 搜索模式暗黑模式适配 */
+
+/* 为搜索模式的其他部分添加特定样式 */
+
+html.dark .search-mode .search-control-panel .tw-bg-white,
+html.dark .search-mode .search-control-panel .dark\:tw-bg-gray-900,
+html.dark .search-mode .search-control-panel .tw-bg-gray-700 {
+  background-color: #27272a !important; /* 设置为灰色或其他您需要的颜色 */
+}
+html.dark .search-mode .search-results .tw-bg-white,
+html.dark .search-mode .search-results .dark\:tw-bg-gray-900,
+html.dark .search-mode .search-results .tw-bg-gray-800 {
+  @apply tw-text-gray-100;
+}
+
+html.dark .search-filters-custom .filter-select {
+  border-color: #ffffff !important; /* 边框颜色 (示例: 浅蓝色) */
+  background-color: #27272a !important; /* 背景色 (示例: 深灰色) */
+}
+
+html.dark .search-filters-custom .filter-select {
+  color: #ffffff !important; /* 字体颜色 (示例: 浅灰色) */
+}
+.header-button {
+  --el-button-bg-color: #eee8d5 !important;
+  --el-button-text-color: #000000 !important; /* gray-100 */
+  --el-button-border-color: #4b5563 !important; /* gray-600 */
+}
+.el-input {
+  --el-input-bg-color: #e5e7eb !important;
+  --el-input-text-color: #000000 !important;
+}
+.el-card {
+  --el-card-bg-color: #eee8d5 !important;
+  border-color: rgb(255, 255, 255) !important;
+}
+
+html.dark .el-card {
+  --el-card-bg-color: transition !important;
+  border-color: var(--el-border-color) !important;
+  color: var(--el-text-color-regular) !important;
+}

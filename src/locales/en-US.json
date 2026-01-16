@@ -1,0 +1,248 @@
+{
+  "search": {
+    "ready": "Semantic search is now ready",
+    "prompt": "Type a keyword to explore your knowledge base",
+    "aiPrompt": "Enter your question, and AI will search for the most relevant document content for you...",
+    "tryAgain": "Try searching again with different keywords",
+    "noRelatedContent": "No related content found.",
+    "searching": "Searching...",
+    "foundResults": "Found {count} related results in total",
+    "semanticHint": "Results are sorted by semantic similarity and may not be an exact match to the keywords.",
+    "source": "Source"
+  },
+  "filter": {
+    "title": "Filter Criteria",
+    "settings": "Filter Settings",
+    "keywords": "Keywords",
+    "keywordsPlaceholder": "Please enter keywords to search",
+    "fileType": "File Type",
+    "timeRange": "Time Range",
+    "lastUpdate": "Last Update",
+    "fileSize": "File Size",
+    "reset": "Reset",
+    "apply": "Apply Filter",
+    "noResults": "No results found matching the filtering criteria",
+    "adjustPrompt": "Please try adjusting or resetting your filtering criteria.",
+    "clearAndRetry": "Clear filters and search again.",
+    "adjustOrImport": "Try adjusting the filter criteria or importing a new file"
+  },
+  "upload": {
+    "title": "Upload Content",
+    "dragDrop": "Drag and drop files or folders here",
+    "clickSelect": "Or click the button below to select",
+    "filesSelected": "{count} files selected",
+    "cancel": "Cancel",
+    "uploading": "Uploading...",
+    "start": "Start Upload",
+    "selectFiles": "Select File(s)",
+    "selectFolder": "Select Folder"
+  },
+  "knowledgeBase": {
+    "buildTitle": "Build Knowledge Base",
+    "overallProgress": "Overall Progress",
+    "loadingFileList": "Loading file list",
+    "noFilesAvailable": "No files available for building the knowledge base",
+    "startBuild": "Start Building ({count} files)",
+    "buildCompleted": "Successfully built",
+    "estimatedTime": "Estimated Time Remaining"
+  },
+  "document": {
+    "listTitle": "Document List",
+    "fileListTitle": "File List",
+    "noDocuments": "No documents found",
+    "loadingText": "Loading file list...",
+    "detail": "View Details",
+    "delete": "Delete",
+    "deleteConfirm": "Are you sure you want to delete document \"{name}\"?",
+    "detailTitle": "File Details",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "adjustOrImport": "Try adjusting the filter criteria or importing a new file",
+    "files": "files",
+    "listTitleDefault": "Document List"
+  },
+  "settings": {
+    "title": "Settings",
+    "general": "General Settings",
+    "language": "Language Settings",
+    "selectLanguage": "Select Language",
+    "pleaseSelectLanguage": "Please Select Language",
+    "releaseDate": "Release Date",
+    "numParameters": "Number of Parameters",
+    "contextLength": "Context Length",
+    "supportedLanguages": "Supported Languages",
+    "currentModel": "Current Model",
+    "apply": "Apply",
+    "downloading": "Downloading",
+    "download": "Download",
+    "hfCachePath": "Hugging Face Cache Path",
+    "embeddingModel": "Embedding Model (Vectorise files)",
+    "size": "Size",
+    "modelSourceFrom": "Source from Hugging Face",
+    "loading": "Loading...",
+    "confirm": "Confirm",
+    "cancel": "Cancel",
+    "clearData": "Clear Data",
+    "clearKnowledgeBaseCache": "Clear Knowledge Base Cache",
+    "clearCacheTitle": "Confirm Clear Cache",
+    "clearCacheConfirm": "This operation will clear all knowledge base cache data, including vector database and metadata. This operation cannot be undone. Are you sure you want to continue?",
+    "clearCacheSuccess": "Knowledge base cache cleared successfully",
+    "clearCacheError": "Failed to clear cache"
+  },
+  "time": {
+    "justNow": "Just now",
+    "allTime": "All Time",
+    "today": "Today",
+    "thisWeek": "This Week",
+    "thisMonth": "This Month",
+    "thisYear": "This Year",
+    "anyTime": "Any Time",
+    "within24h": "Within 24 hours",
+    "withinWeek": "Within a week",
+    "withinMonth": "Within a month"
+  },
+  "common": {
+    "anySize": "Any Size",
+    "loading": "Loading...",
+    "noMore": "No more results",
+    "loadingDetail": {
+      "title": "Loading basic services...",
+      "model_loaded": "Model Loaded",
+      "chroma_db_initialized": "ChromaDB Initialized",
+      "search_service_initialized": "Search Service Initialized",
+      "completed": "Completed",
+      "loading": "Loading...",
+      "initializing": "Initializing..."
+    }
+  },
+  "status": {
+    "completed": "Completed",
+    "inProgress": "In Progress",
+    "failed": "Failed",
+    "emptyFile": "Empty File",
+    "pending": "Pending / Waiting"
+  },
+  "header": {
+    "title": "Local Mind",
+    "docs": "Docs",
+    "search": "Search",
+    "qa": "Q&A",
+    "uploadFiles": "Upload Files",
+    "buildBase": "Build Base",
+    "toggleTheme": "Toggle Theme",
+    "settings": "Settings"
+  },
+  "notification": {
+    "uploadSuccess": "File upload successful!",
+    "uploadFailed": "Upload failed: {error}"
+  },
+  "qa": {
+    "newChat": "New Chat",
+    "user": "User",
+    "sendMessagePlaceholder": "Send a message...",
+    "selectModel": "Select Model",
+    "copy": "Copy",
+    "saveAs": "Save As",
+    "thinking": "Thinking Process",
+    "expand": "Expand",
+    "collapse": "Collapse",
+    "step": "Thought {index}"
+  },
+  "provenance": {
+    "title": "Source Information",
+    "similarity": "Similarity",
+    "ai": "AI",
+    "you": "You",
+    "copied": "Copied to clipboard",
+    "copyFailed": "Copy failed"
+  },
+  "rag_table": {
+    "file_name": "File Name",
+    "contract_date": "Contract Date",
+    "contract_amount": "Contract Amount",
+    "index": "Index",
+    "keywords": "Keywords",
+    "match_keywords": "Matched Keywords",
+    "core_summary": "Core Summary (Preview)",
+    "summary": "Summary",
+    "no_summary": "No Summary",
+    "none": "None",
+
+    "ctx_summary_match_prefix": "Exact matches found in the summaries of the following files based on your query:",
+    "ctx_title_match_prefix": "The following files were precisely located based on your query keywords:",
+    "ctx_inference_note": "Note: The above are relevant files directly found by the system. Based on these file names, it can be inferred that the content you are querying is within these files.",
+    "thinking_process": "Thinking Process",
+
+    "header_statistics": "Comprehensive Statistics & Analysis",
+    "desc_statistics": "Based on your instruction, the system retrieved relevant documents and performed precise calculations, summarized as follows:",
+    "header_multi_target": "Multi-Target Comparison",
+    "desc_multi_target": "The system has found multiple matching targets for you and is comparing them in parallel:",
+    "header_context_contrast": "Context Contrast Analysis",
+    "desc_context_contrast": "Analysis based on the currently locked context versus the newly mentioned targets:",
+    "header_multi_summary": "Multi-Document Comprehensive Summary",
+    "desc_multi_summary": "Core content from multiple relevant documents has been summarized for you:",
+    "header_general": "Comprehensive Processing Results",
+
+    "found_files_prefix": "Found",
+    "found_files_suffix": "relevant files for you:",
+
+    "summary_match_prefix": "Matches found in the summaries of the following files:",
+    "other_summary_match": "Other Summary Matches",
+    "summary_precise_match": "Exact matches found in the summaries of the following files based on your query:",
+    "summary_supplement": "Related Summary Supplement",
+
+    "header_amount_details": "Amount Statistics Details",
+    "total_amount": "Total Amount",
+    "data_source": "Data Source",
+
+    "missing_info_prefix": "Note: No valid",
+    "missing_info_suffix": "info found in retrieved docs.",
+    "no_complete_record": "(No record found containing complete date and amount information)",
+    "warning_missing_data": "Key data extracted failed for the following files, only file names listed",
+    "header_data_extracted": "Key Data Extracted Files",
+    "header_data_missing": "Key Data Missing Files",
+    "file_name_no_data": "File Name (No Key Data)",
+    "desc_data_missing": "The following files were retrieved but failed to extract valid date or amount information:",
+    "content_empty_summary": "(No summary content available)",
+    "disclaimer_auto_extract": "The above content is automatically extracted by the system guard layer and is for reference only.",
+    "tip_calculation_source": "Tip: The above calculations are automatically generated based on the retrieved structured data.",
+    "no_result_found": "No relevant information meeting the requirements was found in the database based on your query conditions.\n\nIt is recommended that you check the keywords or try a simpler description."
+  },
+  "refresh": {
+    "title": "Model Download Complete",
+    "downloadComplete": "Download Complete!",
+    "modelDownloaded": "Model {modelName} has been downloaded successfully",
+    "refreshRequired": "Click the button to refresh the page to make the new model effective",
+    "refreshNow": "Refresh Page"
+  },
+  "buildBase": {
+    "status": {
+      "waiting": "Waiting to be processed...",
+      "processing": "Processing...",
+      "completed": "Build successful!",
+      "failed": "Processing failed",
+      "backendError": "Backend did not return processing result",
+      "requestFailed": "Failed to start request: {error}"
+    },
+    "timeUnits": {
+      "seconds": "s",
+      "minutes": "m",
+      "hours": "h"
+    }
+  },
+  "update": {
+    "title": "Update Available",
+    "newVersion": "New version {version} is available",
+    "currentVersion": "Current version: {version}",
+    "available": "Update Available",
+    "publishedAt": "Published on",
+    "releaseNotes": "Release Notes",
+    "download": "Download Update",
+    "changelog": "Changelog",
+    "close": "Close",
+    "checking": "Checking for updates...",
+    "latest": "You are using the latest version",
+    "error": "Failed to check for updates",
+    "checkAgain": "Check Again"
+  }
+}
