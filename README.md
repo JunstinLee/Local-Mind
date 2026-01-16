@@ -34,10 +34,11 @@ The system handles the vast majority of queries through engineering means, **inv
 *   **Rejecting Uncontrollable Automation**
     **Why invoke local AI only when necessary?**
     Given limited local hardware and AI conditions, fully automatic RAG workflows lead to completely uncontrollable response times and result quality—it is like "a car with a blown tire speeding on the highway," where you never know what will happen next. Local Mind has invested heavily in building an engineering system solely to provide the most stable and factual answers under specific conditions.
-## 快速开始
+## Quick Start
   There are 3 modes in total, with each tab representing a mode:
 **Document Preparation Mode**
-![[Docs.png]]
+<img width="1915" height="1007" alt="Docs" src="https://github.com/user-attachments/assets/09f899eb-e0f1-4aeb-8727-87b85129e33f" />
+
 
 Search Mode
 ![[Search.png]]
