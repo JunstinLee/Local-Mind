@@ -1,4 +1,9 @@
 ---
+
+<div align="center">
+  <img width="2560" height="1440" alt="LOCAL" src="https://github.com/user-attachments/assets/0512344a-d6b0-48eb-b93d-4721de971bbf" />
+</div>
+
 [![Buy Me a Coffee](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=leejustin&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff)](https://www.buymeacoffee.com/leejustin)
 
 **Local Mind** 是一款致力于稳定性、速度和可复现性的本地优先 RAG（检索增强生成）工具。它将用户数据完全存储在本地设备上，通过显式的工程流程读取和过滤文件信息。系统优先采用确定性算法回答问题，仅在必要时调用本地 AI，旨在为用户提供真实、可信的生产力提升。
