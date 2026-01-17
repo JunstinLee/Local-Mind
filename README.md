@@ -1,5 +1,9 @@
 <!-- 在 README.md 中 -->
 <div align="center">
+  <img width="2560" height="1440" alt="LOCAL" src="https://github.com/user-attachments/assets/0512344a-d6b0-48eb-b93d-4721de971bbf" />
+</div>
+
+<div align="center">
   <a href="./README_ZH.md"><img src="https://img.shields.io/badge/Lang-简体中文-red?style=flat-square" alt="ZH"></a>
   <a href="./README.md"><img src="https://img.shields.io/badge/Lang-English-blue?style=flat-square" alt="EN"></a>
   <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License"></a>
