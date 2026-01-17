@@ -100,4 +100,6 @@ Once construction is complete, you can confidently use Search Mode and Q&A Mode.
 8.  **Vectorization Time Estimation Deviation**: Estimated vectorization time is for reference only. **Do not interrupt vectorization midway**. In the current version, interrupting requires restarting from unprocessed files, and the interrupted progress cannot be perfectly resumed.
 9.  **Embedding Model Status Detection Issue**: Even when network conditions are good and the embedding model is already downloaded, clicking the settings interface may sometimes prompt you to download the model. Simply click the download button and wait a few seconds to update the model status.
 10. **Search Result Limit**: When the number of search results exceeds a certain limit, only the 20 most relevant results will be displayed.
+
+
 [![Buy Me a Coffee](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=leejustin&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff)](https://www.buymeacoffee.com/leejustin)
