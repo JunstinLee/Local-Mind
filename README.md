@@ -2,6 +2,8 @@
 <div align="center">
   <a href="./README_ZH.md"><img src="https://img.shields.io/badge/Lang-简体中文-red.svg" alt="Chinese"></a>
   <a href="./README.md"><img src="https://img.shields.io/badge/Lang-English-blue.svg" alt="English"></a>
+  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+  [![Website](https://img.shields.io/badge/Website-Personal-blue?style=flat&logo=google-chrome&logoColor=white)](https://aivault.dev/)
   <a href="mailto:justinlee@aivault.dev">
   <img src="https://img.shields.io/badge/Email-justinlee@aivault.dev-blue?logo=gmail&logoColor=white" alt="Email">
 </a>
