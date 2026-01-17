@@ -1,12 +1,10 @@
 <!-- 在 README.md 中 -->
 <div align="center">
-  <a href="./README_ZH.md"><img src="https://img.shields.io/badge/Lang-简体中文-red.svg" alt="Chinese"></a>
-  <a href="./README.md"><img src="https://img.shields.io/badge/Lang-English-blue.svg" alt="English"></a>
-  [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-  [![Website](https://img.shields.io/badge/Website-Personal-blue?style=flat&logo=google-chrome&logoColor=white)](https://aivault.dev/)
-  <a href="mailto:justinlee@aivault.dev">
-  <img src="https://img.shields.io/badge/Email-justinlee@aivault.dev-blue?logo=gmail&logoColor=white" alt="Email">
-</a>
+  <a href="./README_ZH.md"><img src="https://img.shields.io/badge/Lang-简体中文-red?style=flat-square" alt="ZH"></a>
+  <a href="./README.md"><img src="https://img.shields.io/badge/Lang-English-blue?style=flat-square" alt="EN"></a>
+  <a href="https://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/License-MIT-yellow?style=flat-square" alt="License"></a>
+  <a href="https://aivault.dev/"><img src="https://img.shields.io/badge/Website-Personal-brightgreen?style=flat-square" alt="Website"></a>
+  <a href="mailto:justinlee@aivault.dev"><img src="https://img.shields.io/badge/Email-Contact-blue?style=flat-square" alt="Email"></a>
 </div>
 
 **Local Mind** is a local-first RAG (Retrieval-Augmented Generation) tool dedicated to stability, speed, and reproducibility. It stores user data entirely on the local device, reading and filtering file information through explicit engineering processes. The system prioritizes deterministic algorithms to answer questions, invoking local AI only when necessary, aiming to provide users with authentic and trustworthy productivity enhancements.
