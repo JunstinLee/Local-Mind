@@ -11,6 +11,8 @@
   <a href="mailto:justinlee@aivault.dev"><img src="https://img.shields.io/badge/Email-Contact-blue?style=flat-square" alt="Email"></a>
 </div>
 
+[![Buy Me a Coffee](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=leejustin&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff)](https://www.buymeacoffee.com/leejustin)
+
 **Local Mind** is a local-first RAG (Retrieval-Augmented Generation) tool dedicated to stability, speed, and reproducibility. It stores user data entirely on the local device, reading and filtering file information through explicit engineering processes. The system prioritizes deterministic algorithms to answer questions, invoking local AI only when necessary, aiming to provide users with authentic and trustworthy productivity enhancements.
 **Tip："Recommended to run overnight for large datasets" **
 
@@ -102,4 +104,4 @@ Once construction is complete, you can confidently use Search Mode and Q&A Mode.
 10. **Search Result Limit**: When the number of search results exceeds a certain limit, only the 20 most relevant results will be displayed.
 
 
-[![Buy Me a Coffee](https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee&emoji=&slug=leejustin&button_colour=FFDD00&font_colour=000000&font_family=Cookie&outline_colour=000000&coffee_colour=ffffff)](https://www.buymeacoffee.com/leejustin)
+
