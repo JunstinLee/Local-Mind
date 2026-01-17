@@ -1,57 +1,57 @@
-# Traditional 组件库
+# Traditional Component Library
 
-本目录包含传统文件管理功能的所有前端组件。这些组件使用 Vue 3、Element Plus 和 TailwindCSS 构建，提供了传统的文件浏览、筛选和管理功能。
+This directory contains all frontend components for traditional file management functionality. Built with Vue 3, Element Plus, and TailwindCSS, these components provide traditional file browsing, filtering, and management features.
 
-## 文件结构
+## File Structure
 
 ```
 fronted/src/components/traditional/
-├── DocItem.vue           # 文档项展示组件
-├── FileTree.vue          # 文件树结构展示组件
-└── TraditionalFilter.vue # 传统筛选器组件
+├── DocItem.vue           # Document item display component
+├── FileTree.vue          # File tree structure display component
+└── TraditionalFilter.vue # Traditional filter component
 ```
 
-## 组件功能说明
+## Component Descriptions
 
 ### 1. DocItem.vue
-- **功能**：文档列表项组件，展示单个文档的详细信息
-- **特性**：
-  - 显示文档名称、修改日期、大小和路径
-  - 格式化日期和文件大小显示
-  - 提供文档详情查看和删除操作
-  - 响应式设计，适配不同屏幕尺寸
-  - 暗色模式支持
+- **Function**: Document list item component, displaying detailed information for a single document.
+- **Features**:
+  - Displays document name, modification date, size, and path.
+  - Formatted date and file size display.
+  - Provides document detail viewing and deletion actions.
+  - Responsive design, adapting to different screen sizes.
+  - Dark mode support.
 
 ### 2. FileTree.vue
-- **功能**：文件树结构展示组件，以树形结构展示文件和文件夹
-- **特性**：
-  - 递归渲染文件树结构
-  - 支持文件夹展开/收起
-  - 不同文件类型使用不同颜色图标
-  - 显示文件数量统计
-  - 响应式设计和暗色模式支持
+- **Function**: File tree structure display component, showing files and folders in a hierarchical tree.
+- **Features**:
+  - Recursive rendering of file tree structures.
+  - Supports folder expansion/collapsing.
+  - Different file types use color-coded icons.
+  - Displays file count statistics.
+  - Responsive design and dark mode support.
 
 ### 3. TraditionalFilter.vue
-- **功能**：传统筛选器组件，提供关键词和文件类型筛选功能
-- **特性**：
-  - 弹窗式筛选设置界面
-  - 支持关键词搜索
-  - 多文件类型选择（PDF, DOCX, TXT, MD等）
-  - 已选筛选项可视化展示
-  - 筛选项重置和应用功能
-  - 与文件存储状态集成
+- **Function**: Traditional filter component, providing keyword and file type filtering capabilities.
+- **Features**:
+  - Modal-based filter settings interface.
+  - Supports keyword search.
+  - Multi-select for file types (PDF, DOCX, TXT, MD, etc.).
+  - Visual representation of selected filter criteria.
+  - Filter reset and apply functionality.
+  - Integrated with file storage state.
 
-## 设计原则
+## Design Principles
 
-1. **响应式设计**：所有组件都适配不同屏幕尺寸
-2. **暗色模式**：支持暗色主题，提供良好的夜间使用体验
-3. **用户体验**：提供加载状态、空状态和错误状态的友好提示
-4. **性能优化**：使用虚拟滚动等技术确保大列表的流畅性
-5. **可访问性**：遵循可访问性最佳实践，包含适当的标签和ARIA属性
+1. **Responsive Design**: All components adapt to different screen sizes.
+2. **Dark Mode**: Supports dark themes to provide a better nighttime user experience.
+3. **User Experience**: Provides friendly prompts for loading, empty, and error states.
+4. **Performance Optimization**: Uses techniques like virtual scrolling to ensure smoothness for large lists.
+5. **Accessibility**: Follows accessibility best practices, including appropriate labels and ARIA attributes.
 
-## 使用说明
+## Usage
 
-这些组件通常组合在一个传统文件管理页面中使用：
+These components are typically combined in a traditional file management page:
 
 ```vue
 <template>
@@ -63,20 +63,20 @@ fronted/src/components/traditional/
 </template>
 ```
 
-组件之间通过 Pinia store 进行状态管理和通信，确保数据同步。
+Components communicate and manage state through Pinia stores to ensure data synchronization.
 
-## 技术栈
+## Tech Stack
 
 - Vue 3 Composition API
-- Element Plus UI 组件库
-- TailwindCSS 样式框架
-- Pinia 状态管理
-- Lucide Vue Next 图标库
-- Vue I18n 国际化
+- Element Plus UI Library
+- TailwindCSS Styling Framework
+- Pinia State Management
+- Lucide Vue Next Icons
+- Vue i18n Internationalization
 
-## 组件间关系
+## Component Relationships
 
-- `TraditionalFilter` 组件负责筛选条件的设置和管理
-- `FileTree` 组件以树形结构展示文件系统层次结构
-- `DocItem` 组件以列表形式展示文档详细信息
-- 所有组件通过 Pinia store 进行状态同步
+- The `TraditionalFilter` component is responsible for setting and managing filter criteria.
+- The `FileTree` component displays the file system hierarchy in a tree structure.
+- The `DocItem` component displays detailed document information in a list format.
+- All components synchronize state through Pinia stores.
